@@ -1,0 +1,382 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Bold.woff2) format('woff2'), url(Roboto-Bold.woff) format('woff');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto-Regular.woff2) format('woff2'), url(Roboto-Regular.woff) format('woff');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root {
+    --blue: #3F2AFF;
+    --violet: #2E2B44;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.list-resert {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.btn {
+    color: white;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 20px;
+}
+
+/* header */
+
+header {
+    background-color: var(--blue);
+}
+
+.header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 15px 31px;
+}
+
+.header__logo {
+    flex-shrink: 0;
+}
+
+.nav {
+    width: 470px;
+}
+
+.nav_list {
+    justify-content: space-between;
+}
+
+.nav__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+/* hero */
+
+.hero {
+    background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+}
+
+.hero-box {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-image: url(..//img/hero-desc.png);
+    background-repeat: no-repeat;
+    background-size: 633px 593px;
+    background-position: right 15px center;
+}
+
+.hero-title {
+    width: calc((459 / 1110) * 100%);
+    margin: 0;
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.hero__descr {
+    margin: 0;
+    margin-bottom: 62px;
+    width: calc((444 / 1110) * 100%);
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    padding: 24px 75.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+/* benefits */
+
+.benefits {
+    padding: 80px 0;
+}
+
+.benefits_top {
+    margin-bottom: 23px;
+    padding-left: 190px;
+    background-image: url(..//img/benefits-desc.png);
+    background-repeat: no-repeat;
+    background-position: left top 22px;
+    background-size: 160px 142px;
+}
+
+.benefits__top-title {
+    max-width: 380px;
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #2E2B44;
+}
+
+.benefits__top-descr {
+    margin: 0;
+    max-width: 585px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.benefits__bottom-descr {
+    max-width: 240px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    color: #666666;
+}
+
+.benefits__item {
+    align-items: center;
+}
+
+.benefits__svg {
+    flex-shrink: 0;
+    margin-right: 28px;
+    width: 80px;
+    height: 80px;
+}
+
+/* teachers */
+
+.teachers {
+    padding-top: 75px;
+    padding-bottom: 73px;
+    background-color: var(--violet);
+}
+
+.teachers_title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.teacher__img {
+    text-align: center;
+    object-fit: contain;
+}
+
+.teacher__img img {
+    margin-bottom: 27px;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.teacher__name {
+    margin: 0;
+    margin-bottom: 6px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.teacher__descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #85859B;
+}
+
+/* courses */
+
+.courses {
+    padding-top: 75px;
+    padding-bottom: 50px;
+}
+
+.courses_title {
+    margin: 0;
+    margin-bottom: 23px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    color: #212133;
+}
+
+.courses_item {
+    position: relative;
+    height: 480px;
+    margin-bottom: 30px;
+    padding-top: 185px;
+    background-color: #EDF0F9;
+    border-radius: 20px;
+}
+
+.couses__item-title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #212133;
+}
+
+.couses__item-descr {
+    margin: 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.couses__item-btn {
+    max-width: 202px;
+    min-height: 60px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+}
+
+.couses__item-hours {
+    align-items: center;
+    position: absolute;
+    margin: 0;
+    top: 10px;
+    right: 2px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.couses__item-hours svg {
+    margin-right: 7px;
+}
+
+.cards__content {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 26px 30px 30px;
+}
+
+.courses__img {
+    flex-shrink: 1;
+}
+
+.courses__cards {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.courses_item1 {
+    background-image: url(..//img/course1-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.courses_item2 {
+    background-image: url(..//img/course2-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.courses_item3 {
+    background-image: url(..//img/course3-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+.courses_item4 {
+    background-image: url(..//img/course4-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--violet);
+    padding-top: 28px;
+    padding-bottom: 22px;
+    margin-bottom: 4px;
+}
+
+.footer-list {
+    width: 186px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container {
+    justify-content: center;
+}
+
+.footer-copyright-text {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #2E2B44;
+}
+
+.footer-copyright-text span {
+    color: #3F2AFF;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+}
+
+.burger {
+    display: none;
+}
+
